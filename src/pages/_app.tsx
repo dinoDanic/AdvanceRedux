@@ -1,8 +1,14 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { Global } from "@emotion/react";
+import { normalize } from "@kodiui/kodiui";
+import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Global styles={normalize} />
+      <Component {...pageProps} />;
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
