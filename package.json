@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "types": "graphql-codegen --config codegen.yml"
+    "types": "graphql-codegen --config codegen.yml",
+    "types-watch": "graphql-codegen --config codegen.yml --watch"
   },
   "dependencies": {
     "@apollo/client": "^3.6.6",
