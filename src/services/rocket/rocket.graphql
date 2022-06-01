@@ -1,0 +1,6 @@
+query fetchRockets {
+  rockets {
+    id
+    name
+  }
+}

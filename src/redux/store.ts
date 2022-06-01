@@ -1,11 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import homePageReducer from "pages/homePageSlice";
-import charactersReducer from "services/character/slice";
+import rocketReducer from "services/rocket/slice";
 
 export const store = configureStore({
   reducer: {
     homePage: homePageReducer,
-    characters: charactersReducer,
+    rocket: rocketReducer,
   },
 });
 

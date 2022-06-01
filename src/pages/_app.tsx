@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { store } from "redux/store";
 
 export const apolloClient = new ApolloClient({
-  uri: "https://rickandmortyapi.com/graphql",
+  uri: "https://api.spacex.land/graphql",
   cache: new InMemoryCache(),
 });
 
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Global styles={normalize} />
       <ApolloProvider client={apolloClient}>
         <Provider store={store}>
-          <Component {...pageProps} />;
+          <Component {...pageProps} />
         </Provider>
       </ApolloProvider>
     </>
